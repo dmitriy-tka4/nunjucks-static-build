@@ -1,0 +1,10 @@
+.header {
+  margin: 0;
+  padding: 20px 0;
+  max-width: 100%;
+  background-color: #eee;
+
+  @media (min-width: $desktop) {
+    padding: 20px 0;
+  }
+}

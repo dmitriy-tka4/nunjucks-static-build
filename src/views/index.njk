@@ -1,0 +1,19 @@
+{% extends "./layouts/base.njk" %}
+{% block content %}
+
+  <div class="container">
+
+    <h1>test adasdfasdfa</h1>
+    {% if isMain %}
+      <h3>true - это главная</h3>
+      <p>{{ asdf }}</p>
+      <p><img src="assets/images/icon-success.svg" width="100"></p>
+    {% else %}
+      I am good! 222
+    {% endif %}
+
+    <p><a href="contacts.html">Контакты</a></p>
+
+  </div>
+
+{% endblock %}

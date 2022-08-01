@@ -1,0 +1,18 @@
+{% extends "./layouts/base.njk" %}
+{% block content %}
+
+  <div class="container">
+
+    <h1>Контакты</h1>
+    {% if isMain %}
+      <h3>это главная'</h3>
+      <p>{{ asdf }}</p>
+    {% else %}
+      I am good! 222
+    {% endif %}
+
+    <p><a href="index.html">На главную</a></p>
+
+  </div>
+
+{% endblock %}
