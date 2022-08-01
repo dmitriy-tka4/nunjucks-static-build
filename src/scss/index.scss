@@ -2,7 +2,7 @@
 
 // minireset
 // @import "../../node_modules/minireset.css/minireset.sass";
-// @import "minireset.css/minireset.sass";
+@import "minireset.css/minireset.sass";
 
 // lightgallery
 // FIXME: есть ссылки на иконочные шрифты, Webpack их не видит при таком импорте - разбираться с настройкой Webpack
