@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import NunjucksWebpackPlugin from 'nunjucks-webpack-plugin';
 import CopyPlugin from 'copy-webpack-plugin';
+import ExtraWatchWebpackPlugin from 'extra-watch-webpack-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -57,6 +58,9 @@ const config = {
       patterns: [
         { from: './src/images', to: './images' }, // значение to относительно папки output.path
       ],
+    }),
+    new ExtraWatchWebpackPlugin({
+      files: [ 'src/**/*.njk' ],
     }),
   ]
 };
