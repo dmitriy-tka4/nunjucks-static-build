@@ -57,6 +57,7 @@ const config = {
     new CopyPlugin({
       patterns: [
         { from: './src/images', to: './images' }, // значение to относительно папки output.path
+        { from: './src/libs', to: './libs' },
       ],
     }),
     new ExtraWatchWebpackPlugin({

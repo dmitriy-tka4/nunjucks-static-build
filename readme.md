@@ -22,6 +22,11 @@
 
 Для отслеживания файлов `*.njk` в режиме `--watch` (изначально они не отслеживаются) добавлен плагин `extra-watch-webpack-plugin`.
 
+### Lightgallery
+
+Из архива на [GitHub](https://github.com/sachinchoolur/lightgallery.js) взята папка `dist`, размещена со всеми файлами (стили, шрифты, картинки, js), и подключение уже непосредственно нужных файлов из нее в `base.njk`. Инициализация в файле `src/js/lightgallery.js`.
+
+
 ## TODO
 
 * В Webpack не настроены шрифты, если они будут подключены файлами, а не через Google Fonts
